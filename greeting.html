@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приветствие</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="welcomeMessage"></h1>
+        
+        <p>я тебе на лицо кончал и выебал тебя смачно в жопу(долбабе), вы кстати знали что у ефима мать шлюха дырявая</p>
+        
+        <div class="image-grid">
+            <img src="https://steamuserimages-a.akamaihd.net/ugc/972101389086669480/9D462C41DC8439C2F0DED90C3140A441C75F0B1C/?imw=512&imh=356&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
+            <!-- Добавьте больше изображений/гифок по желанию -->
+        </div>
+
+    </div>
+
+    <script>
+        window.onload = function() {
+            const name = localStorage.getItem('userName');
+            if (name) {
+                document.getElementById('welcomeMessage').innerText = 'Привет, ' + name + '!';
+            } else {
+                // Если имени нет, можно перенаправить обратно на страницу ввода имени.
+                window.location.href = 'index.html';
+            }
+        };
+    </script>
+</body>
+</html>
